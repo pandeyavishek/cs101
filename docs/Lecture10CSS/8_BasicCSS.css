@@ -18,3 +18,5 @@ time { color: #999999; }
 aside { text-align: center; }
 aside img { float: left; } /*Take the first image, if there is room move that image to the left, and the second, and ect.*/
 
+/*Float figure not image*/
+
