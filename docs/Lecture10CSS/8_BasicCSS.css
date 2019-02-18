@@ -1,5 +1,5 @@
-* { margin: 0px; padding: 0px;}
-header, section, footer, nav, article, aside, figure, figcaption, hgroup{ display: block; }
+* { margin: 0px; padding: 0px;}  /*Always start with this style rule. The "*" applies the rule to everything*/
+header, section, footer, nav, article, aside, figure, figcaption, hgroup{ display:block; }
 h1 { font: bold 20px verdana, sans-serif; }
 h2 { font: bold 14px verdana, sans-serif; }
 body { text-align: center; }
@@ -16,5 +16,5 @@ article footer { text-align: right; }
 figcaption { font: italic 14px verdana, sans-serif; color: teal; }
 time { color: #999999; }
 aside { text-align: center; }
-aside img { float: left; }
-*/
+aside img { float: left; } /*Take the first image, if there is room move that image to the left, and the second, and ect.*/
+
