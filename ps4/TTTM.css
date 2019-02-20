@@ -6,4 +6,7 @@ h3 {font:bold 20px arial, sans-serif;}
 body {text-align: center;}
 
 
-#header {background: #232D4B; padding: 5px 15px; font: bold 14px franklin gothic, sans-serif; color: #FFFFFF;}
+#header {background: #232D4B; padding: 5px 15px; font: bold 16px franklin gothic, sans-serif; color: #FFFFFF;}
+#main_section {  margin: 20px 50px; }
+article { background: #F84C1E; border: 1px solid #999999; padding: 20px; margin-bottom: 15px; font: bodoni 14px; }
+figcaption { font: italic 14px bodoni; }
