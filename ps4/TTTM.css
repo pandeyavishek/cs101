@@ -8,5 +8,10 @@ body {text-align: center;}
 
 #header {background: #232D4B; padding: 5px 15px; font: bold 16px franklin gothic, sans-serif; color: #FFFFFF;}
 #main_section {  margin: 20px 50px; }
+#table { margin: 20px 50px; padding: 20px; margin-bottom: 15px; font: bodoni 14px; }
+#table {text-align: center;}
 article { background: #F84C1E; border: 1px solid #999999; padding: 20px; margin-bottom: 15px; font: bodoni 14px; }
 figcaption { font: italic 14px bodoni; }
+
+aside {text-align: center; }
+aside img {float: left; }
