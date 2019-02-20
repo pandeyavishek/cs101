@@ -1,1 +1,9 @@
 * {margin: 0px; padding: 0px}
+header, section, footer, nav, article, aside, figure, figcaption, hgroup{ display: block; }
+h1 {font:bold 30px arial, sans-serif;}
+h2 {font:bold 25px arial, sans-serif;}
+h3 {font:bold 20px arial, sans-serif;}
+body {text-align: center;}
+
+
+#header {background: #232D4B; padding: 5px 15px; font: bold 14px franklin gothic, sans-serif; color: #FFFFFF;}
