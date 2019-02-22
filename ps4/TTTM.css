@@ -1,5 +1,5 @@
 * {margin: 0px; padding: 0px}
-header, section, footer, nav, article, aside, figure, figcaption, hgroup{ display: block; }
+header, section, footer, nav, article, aside, figure, figcaption, hgroup{ display: inline-block; }
 h1 {font:bold 30px arial, sans-serif;}
 h2 {font:bold 25px arial, sans-serif;}
 h3 {font:bold 20px arial, sans-serif;}
@@ -8,6 +8,9 @@ body {text-align: center;}
 
 #header {background: #232D4B; padding: 5px 15px; font: bold 16px franklin gothic, sans-serif; color: #FFFFFF;}
 #main_section {  margin: 20px 50px; }
+
+figure {float: left;}
+
 #table { margin: 20px 50px; padding: 20px; margin-bottom: 15px; font: bodoni 14px; }
 #table {text-align: center;}
 article { background: #F84C1E; border: 1px solid #999999; padding: 20px; margin-bottom: 15px; font: bodoni 14px; }
