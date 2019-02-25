@@ -11,10 +11,11 @@ body {text-align: center;}
 
 figure {float: left;}
 
-#table { margin: 20px 50px; padding: 20px; margin-bottom: 15px; font: bodoni 14px; }
+
+#table { margin: 20px 50px; padding: 15px; margin-bottom: 15px; font: bodoni 14px; }
 #table {text-align: center;}
 article { background: #F84C1E; border: 1px solid #999999; padding: 20px; margin-bottom: 15px; font: bodoni 14px; }
-figcaption { font: italic 14px bodoni; }
+figcaption { font: italic 14px bodoni;  }
 
 aside {text-align: center; }
 aside img {float: left; }
