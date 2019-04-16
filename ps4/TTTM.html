@@ -11,6 +11,8 @@
 		<script src='CSS.js'></script>
 
 
+
+
 	</head>
 
 	<body>
@@ -221,6 +223,35 @@
 		</section>
 		<br>
 
+		<section>
+			<p>
+				<!-- <button onclick ="changePicture()"> <img id = 'slideshowSection' src= "images/pic1.jpg" width="400" width="300"> </button> -->
+				<button onclick="changePicture()"><img id='hi' src="images/TajMahal.jpg" width="400" height="300"> </button>
+			</p>
+
+			<p id = 'demo'></p>
+				
+			</div>
+		</section>
+
+		<script>
+			var i = 0; //starting point
+
+			//Changing the Image
+			function changePicture(){
+				i++;
+				//document.getElementById('slideshowSection').innerHTML = <img src="/images/pic" +i+".jpg">;
+				document.getElementById('demo').innerHTML='you clicked ' + i + ' times';
+				document.getElementById('hi').src = 'images/pic'+i+".jpg";
+
+				if(i>=4){
+					i = 0;
+				}
+
+				}
+
+		</script>
+
 		<aside>
 			<img src="images/usaflag.png" width="285px" height="150px">
 			<img src="images/Nepalflag.png" width="123px" height="150px">
@@ -229,6 +260,12 @@
 			<img src="images/iranflag.png"  width="262px" height="150px">
 			<img src="images/cubaflag.png"  width="300px" height="150px">
 		</aside>
+
+		
+
+		<footer>
+			
+		</footer>
 
 
 	</body>
