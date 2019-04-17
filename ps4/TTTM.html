@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang='en'>
-<!-- Avishek Pandey, Feb 7, 2019, Theme: My Travels -->
+<!-- Avishek Pandey, April 17, 2019, Theme: My Travels -->
 <!-- also available at https://pandeyavishek.github.io/cs101/ps4/TTTM -->
 <head>
 	<meta charset='utf-8'>
@@ -10,7 +10,22 @@
 	<link rel='stylesheet' href='TTTM.css'>
 	<script src='CSS.js'></script>
 
+	<script> 
+			var i = 0; //starting point
 
+			//Changing the Image
+			function changePicture(){
+				i++;
+				//document.getElementById('slideshowSection').innerHTML = <img src="/images/pic" +i+".jpg">;
+				document.getElementById('hi').src = 'images/pic'+i+".jpg";
+
+				if(i>=4){
+					i = 0;
+				}
+
+			}
+
+	</script>
 
 
 </head>
@@ -20,7 +35,7 @@
 		<header>
 			<!-- page introduction -->
 			<h1>My Travels</h1>
-			
+
 
 		</header>
 	</div>
@@ -99,9 +114,9 @@
 								<div id="main_section">
 									<article>
 										<h2>Travels of the Future</h2>
-										
+
 										<p><em>List of places to go:</em></p>
-										
+
 										<ol>
 											<li>South Africa</li>
 											<li>Cambodia</li>
@@ -109,7 +124,7 @@
 											<li>Cuba</li>
 										</ol>
 										<br>
-										
+
 										<p><strong>Supplies</strong></p>
 										<ul>
 											<li>Passport</li>
@@ -117,7 +132,7 @@
 											<li>Clothes</li>
 											<li>Itinerary</li>
 										</ul>
-										
+
 										<figure>
 											<h3>Capetown, South Africa</h3>
 											<a href="http://www.capetown.travel/">
@@ -157,7 +172,7 @@
 													</article>	
 												</div>	
 											</section>
-											
+
 
 											<section>
 												<article>
@@ -187,7 +202,7 @@
 																		<td>Phone Number:</td>
 																		<td><input type="tel" name="usrtel"></td>
 																	</tr>
-																	
+
 																	<tr>
 																		<td>Smoker: </td>
 																		<td><input type="radio" name="smoke" value="Smoker">Yes
@@ -227,31 +242,18 @@
 													<div id="slideshowSection">
 														<p>
 															<!-- <button onclick ="changePicture()"> <img id = 'slideshowSection' src= "images/pic1.jpg" width="400" width="300"> </button> -->
-															<button onclick="changePicture()"><img id='hi' src="images/TajMahal.jpg" width="400" height="300"> </button>
+															<button type = "button" onclick="changePicture()">Click to Change Picture </button>
+															<p></p>
+															<img id='hi' src="" width="400" height="300">
+															<!-- Should i start with a default image? -->
 														</p>
 
 														<p id = 'demo'></p>
-														
-														
-														
 
-														<script>
-			var i = 0; //starting point
 
-			//Changing the Image
-			function changePicture(){
-				i++;
-				//document.getElementById('slideshowSection').innerHTML = <img src="/images/pic" +i+".jpg">;
-				document.getElementById('demo').innerHTML='you clicked ' + i + ' times';
-				document.getElementById('hi').src = 'images/pic'+i+".jpg";
 
-				if(i>=4){
-					i = 0;
-				}
 
-			}
-
-		</script>
+		
 	</div>
 
 </section>
@@ -269,7 +271,7 @@
 
 
 <footer>
-	
+
 </footer>
 
 
