@@ -31,12 +31,23 @@ public class A11_ap9sa_Avishek_Pandey {
         interestRate = input / 100;
         amount = INITAL_AMOUNT;
 
+
         while (amount < 2 * INITAL_AMOUNT) {// idk what to do here
 
             year++;
             amount += amount * interestRate;
         }
 
+
+        System.out.println("The investment doubles in " + (year - 1) + " to " + year + " year(s).");
+
+/**
+ *
+ *
+ *
+ *
+ */
+        year = 0;
         System.out.println("Enter years for investment to double as INTEGER between 1 & 72:");
         input = in.nextInt();
 
@@ -51,7 +62,15 @@ public class A11_ap9sa_Avishek_Pandey {
         interestRate = 0.0;
 
         while (amount < 2 * INITAL_AMOUNT) {
+            amount = INITAL_AMOUNT;
+            interestRate += .001;
 
+            for (year<yearsToDouble) {
+                year = 0;
+                year++;
+                amount += amount * interestRate;
+
+            }
         }
 
     }
