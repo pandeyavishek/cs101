@@ -5,6 +5,7 @@
  * Problem Set 10
  */
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class A11_ap9sa_Avishek_Pandey {
@@ -18,9 +19,11 @@ public class A11_ap9sa_Avishek_Pandey {
         int year = 0;
         int yearsToDouble = 0;
         Scanner in = new Scanner(System.in); //Scanner for user input
-
+/**
+ * Calculating doubling time
+ */
         System.out.println("Enter interest percent as INTEGER between 1 & 72 inclusive:");
-        input = in.nextInt();
+        input = in.nextInt(); //Takes user input
 
         while (input < 1 || input > 72) { //greater 72 or less than 1 get changed
             System.out.println("Percent interest must be INTEGER between 1 & 72 inclusive!");
@@ -32,7 +35,7 @@ public class A11_ap9sa_Avishek_Pandey {
         amount = INITAL_AMOUNT;
 
 
-        while (amount < 2 * INITAL_AMOUNT) {// idk what to do here
+        while (amount < 2 * INITAL_AMOUNT) {
 
             year++;
             amount += amount * interestRate;
@@ -42,11 +45,9 @@ public class A11_ap9sa_Avishek_Pandey {
         System.out.println("The investment doubles in " + (year - 1) + " to " + year + " year(s).");
 
 /**
- *
- *
- *
- *
+ * Calculating interest given a certain doubling time
  */
+        DecimalFormat value = new DecimalFormat("#.#"); //formats decimal output
         year = 0;
         System.out.println("Enter years for investment to double as INTEGER between 1 & 72:");
         input = in.nextInt();
@@ -65,13 +66,14 @@ public class A11_ap9sa_Avishek_Pandey {
             amount = INITAL_AMOUNT;
             interestRate += .001;
 
-            for (year<yearsToDouble) {
-                year = 0;
-                year++;
+            for (year = 0; year < yearsToDouble; year++) {
                 amount += amount * interestRate;
-
             }
         }
+        //math for interest rate
+        interestRate = interestRate * 1000;
+        interestRate = interestRate / 10;
 
+        System.out.println("An interest rate of " + value.format(interestRate) + "% will double the investment in " + (int) input + " years.");
     }
 }
